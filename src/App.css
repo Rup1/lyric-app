@@ -1,33 +1,38 @@
-.App {
-  text-align: center;
+.slds-brand-band:before {
+  background-image: url(/assets/images/themes/oneSalesforce/banner-brand-default.png),
+    linear-gradient(to top, rgba(175, 197, 222, 0) 0, #1b5f9e) !important;
+  z-index: 0 !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.slds-brand-band:after {
+  z-index: 0 !important;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(175, 197, 222, 0) 60%,
+    #afc5de
+  ) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+  background: white;
+  padding-top: 1.5em;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.track-rating {
+  font-size: 4em !important;
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-song {
+  z-index: 1;
+}
+
+.slds-container_large {
+  background-color: white;
+  z-index: 1;
+}
+
+html {
+  background-color: #afc4df !important;
 }
